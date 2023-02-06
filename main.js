@@ -7,8 +7,7 @@ import Search from "@arcgis/core/widgets/Search";
 // import locator from "@arcgis/core/rest/locator";
 import { addressToLocations } from "@arcgis/core/rest/locator";
 
-config.apiKey =
-    "AAPKcf3f286477cf4957af1dd23c22270fceg4BEunenRt85EgxxIscnvtmOB6wxnBTRZVSWvW9t_Bxde8ZrWC3CgSKaiC8Gvh9v";
+config.apiKey = import.meta.env.VITE_ARC_API_KEY;
 
 // Create the map and set the map type.
 const map = new Map({
